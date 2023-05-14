@@ -1,0 +1,18 @@
+<h1>Result</h1>
+
+<p>
+  <% if !@response[:ingrid] %>
+    Sorry but <strong><%= @response[:input_word]  %></strong> can't be built out of <%= @response[:letters] %>
+  <% else %>
+    <% if @response[:english_word] %>
+      <strong>Congratulations!</strong> <%= @response[:input_word] %> is a valid English word!
+    <% else %>
+      Sorry but <strong><%= @response[:input_word] %></strong> does not seem to be a valid English word...
+    <% end %>
+  <% end %>
+</p>
+
+
+<div id="link">
+  <%= link_to "Play again", new_path %>
+</div>

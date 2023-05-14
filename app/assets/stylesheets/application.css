@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+ .container {
+  padding: 20px;
+ }
+
+.letter {
+  background-color: rgb(77, 121, 241);
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  box-shadow: 2px 2px 5px grey;
+  margin-left: 5px;
+}
+
+.letters {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+#link a{
+  text-decoration: none;
+ }
